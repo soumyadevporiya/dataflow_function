@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dataflow
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dataflow
+  template:
+      metadata:
+        labels:
+          app: dataflow
+      spec:
+        containers:
+        - name: dataflow
+          image: gcr.io/mimetic-parity-378803/dataflow_pipeline:latest
