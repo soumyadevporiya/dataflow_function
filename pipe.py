@@ -1,4 +1,5 @@
 import google.auth
+
 from apache_beam.options.pipeline_options import PipelineOptions
 from apache_beam.options.pipeline_options import GoogleCloudOptions
 #from apache_beam.utils.pipeline_options import SetupOptions
